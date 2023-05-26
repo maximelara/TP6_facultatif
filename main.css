@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+body{    
+    width: 360px;
+    height: 800px;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.navbar{
+    width: 100%;
+    background-color: rgb(75, 75, 80);
+    color: rgb(230, 230, 230);
+}
+.container{
+    width: 100%; 
+    height: 4.5em;
+    margin-right: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: rgb(230, 230, 230);    
+    margin-left: 0.25em;
+    font-size: 3.5em;
+    align-self: center;
+}
+.checkbox{
+    position: absolute;
+    margin: auto;  
+    margin-top: -0.15em;   
+    width: 3em;
+    height: 3em;
+    opacity: 0%;    
+}
+.box{
+    margin-right: 1em;
+}
+.bars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+}
+.menu_items{
+    color: rgb(75, 75, 80);
+    position: absolute;
+    margin-top: 2em;
+    margin-left: -20em;
+}
+.content{
+    color: rgb(75, 75, 80);
+    position: absolute;
+    margin-top: 2em;
+    margin-left: -18em;
+}
+.menu_items ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.menu_items li{
+    list-style: none;
+}
+.content{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .menu_items{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .content{
+    display: block;
+}
+input[type="checkbox"]:checked ~ .navbar{
+    background-color: aqua;
+}
+
+#bar1, #bar2, #bar3{
+    background-color: rgb(230, 230, 230);
+    width: 2.5em;
+    height: 0.3em;  
+}
